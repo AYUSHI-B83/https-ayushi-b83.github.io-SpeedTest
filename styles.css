@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(33, 209, 104);
+}
+body,
+.quotes {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  background-color: #0fc7f0;
+  padding: 1 rem;
+  border-radius: 0.5 rem;
+  width: 700px;
+  max-width: 90%;
+}
+.dot {
+  position: absolute;
+  top: 1.5rem;
+  height: 75px;
+  width: 75px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.timer {
+  position: absolute;
+  top: 2rem;
+  font-size: 3rem;
+  color: rgb(208, 42, 103);
+  font-weight: bold;
+  text-decoration: solid;
+}
+.quote {
+  position: absolute;
+  font-size: 2rem;
+  top: 10rem;
+  margin-bottom: 5 rem;
+  margin-left: calc(1 rem -2px);
+  margin-right: calc(1 rem -2px);
+}
+.quotes {
+  background-color: transparent;
+  border: 2px solid #1e1d11;
+  outline: none;
+  width: 100%;
+  height: 12rem;
+  margin: auto;
+  resize: none;
+  padding: 0.5 rem 0.5 rem;
+  font-size: 1 rem;
+  border-radius: 0.5 rem;
+}
+.quotes:focus {
+  border-color: black;
+}
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
